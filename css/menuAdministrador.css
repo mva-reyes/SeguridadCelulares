@@ -1,0 +1,158 @@
+/*-- variables colores --*/
+:root {
+    --primary: #111b54;
+    --light: #ffffff;
+    --grey: #efefef;
+    --tomate: #CD4B33;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Mulish', sans-serif; /*-- Fuente --*/
+    font-weight: 300px;
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    #sidebar-container {
+        display: none;
+    }
+    .stat {
+        border: 0;
+    }
+}
+
+/*--------------------- Menú lateral ---------------------*/
+a:hover {
+    text-decoration: none;
+}
+
+.bg-primary { background-color: var(--primary) !important; }
+.bg-light { background-color: var(--light) !important; }
+.bg-grey { background-color: var(--grey) !important; }
+.bg-mix { background: linear-gradient(180deg, var(--light) 50%, var(--grey) 0); }
+
+
+#siderbar-container {
+    min-height: 100vh;
+}
+
+#siderbar-container .logo {
+    padding: .875rem 1.25rem;
+}
+
+#siderbar-container .menu {
+    width: 18rem;
+}
+
+#content {
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 5rem;
+}
+
+/*--------------------- Navbar ---------------------*/
+.btn-search {
+    right: 0px;
+}
+
+/*--------------------- Responsive menú ---------------------*/
+@media (max-width: 2000px) {
+    #user {
+        display: none;
+    }
+
+    #perfil {
+        display: none;
+    }
+
+    #datos {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    #user {
+        display: none;
+    }
+
+    #perfil {
+        display: none;
+    }
+
+    #datos {
+        display: none;
+    }
+} 
+
+@media (max-width: 992px) {
+    #user {
+        display: none;
+    }
+
+    #perfil {
+        display: none;
+    }
+
+    #datos {
+        display: none;
+    }
+} 
+
+@media (max-width: 768px) {
+    #siderbar-container {
+        display: none;
+    }
+    .stat {
+        border: 0;
+    }
+
+    #user {
+        display: ruby;
+    }
+
+    #perfil {
+        display: ruby;
+    }
+
+    #datos {
+        display: ruby;
+    }
+}
+
+@media (max-width: 576px) {
+    #user {
+        display: ruby;
+    }
+
+    #perfil {
+        display: ruby;
+    }
+
+    #datos {
+        display: ruby;
+    }
+} 
+
+/*--------------------- Contenido #1 ---------------------*/
+
+.btn {
+    border: 0;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+}
+
+.stat {
+    border-right: 1px solid var(--grey);
+}
+
+.bg-mix { 
+    background: linear-gradient(180deg, var(--light) 50%, var(--grey) 0);
+}
+
+.btnDatos {
+    margin: 10px auto;
+    display: flex;
+}

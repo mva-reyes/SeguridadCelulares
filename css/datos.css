@@ -1,0 +1,163 @@
+:root {
+    --primary: #111b54;
+    --light: #ffffff;
+    --grey: #efefef;
+    --tomate: #CD4B33;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Mulish', sans-serif; /*-- Fuente --*/
+    font-weight: 300px;
+    color: var(--primary);
+}
+
+/*--------------------- Menú lateral ---------------------*/
+a:hover {
+    text-decoration: none;
+}
+
+.bg-primary { background-color: var(--primary) !important; }
+.bg-light { background-color: var(--light) !important; }
+
+#siderbar-container {
+    min-height: 100vh;
+}
+
+#siderbar-container .logo {
+    padding: .875rem 1.25rem;
+}
+
+#siderbar-container .menu {
+    width: 18rem;
+}
+
+/*--------------------- Navbar ---------------------*/
+.btn-search {
+    right: 5px;
+}
+
+#content {
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 5rem;
+}
+
+.stat {
+    border-right: 1px solid var(--grey);
+}
+
+/*--------------------- Responsive Menú ---------------------*/
+.bg-grey { background-color: var(--grey) !important;}
+
+@media (max-width: 2000px) {
+    #user {
+        display: none;
+    }
+
+    #perfil {
+        display: none;
+    }
+
+    #datos {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    #user {
+        display: none;
+    }
+
+    #perfil {
+        display: none;
+    }
+
+    #datos {
+        display: none;
+    }
+} 
+
+@media (max-width: 992px) {
+    #user {
+        display: none;
+    }
+
+    #perfil {
+        display: none;
+    }
+
+    #datos {
+        display: none;
+    }
+} 
+
+@media (max-width: 768px) {
+    #siderbar-container {
+        display: none;
+    }
+    .stat {
+        border: 0;
+    }
+
+    #user {
+        display: ruby;
+    }
+
+    #perfil {
+        display: ruby;
+    }
+
+    #datos {
+        display: ruby;
+    }
+}
+
+@media (max-width: 576px) {
+    #user {
+        display: ruby;
+    }
+
+    #perfil {
+        display: ruby;
+    }
+
+    #datos {
+        display: ruby;
+    }
+} 
+
+/*------------------- Contenido #1 ------------------*/
+.container-titulo1 {
+    color: var(--light);
+    background:var(--tomate);
+    object-fit: cover;
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.texto1 {
+    margin: 70px auto;
+    font-size: 40px;
+}
+
+.textoGrafico {
+    color: var(--dark);
+    margin: 30px;
+}
+
+.text-dark { color:var(--dark) !important;}
+
+.text-light { color:var(--light) !important;}
+
+.member-info {
+    bottom: 3rem;
+    left: 3rem;
+}
+
+.botonDatos {
+    margin: 20px auto;
+}

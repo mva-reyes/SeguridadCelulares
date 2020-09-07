@@ -1,0 +1,58 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#contenedor_carga {
+	background-color: #111b54;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	transition: all 3s ease;
+	z-index: 10000;
+}
+
+#carga {
+	border: 17px solid #ffffff;
+	border-top-color: #CD4B33;
+    border-top-style: outset;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	animation: girar 1.5s linear infinite;
+}
+#cargaLetra {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 250px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	font-size: 20px;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #fff;
+	animation: desplazar 2s linear infinite;
+}
+
+@keyframes desplazar {
+	0% { transform: skewX(0deg);}
+	25% { transform: skewX(-5deg);}
+	50% { transform: skewX(-10deg);}
+	75% { transform: skewX(-5deg);}
+	100% { transform: skewX(0deg);}
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
